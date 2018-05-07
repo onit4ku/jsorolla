@@ -299,7 +299,7 @@ var OpencgaManager = {
             id = '/' + args.id;
         }
 
-        var url = host + '/webservices/rest/'+ version + '/' + api + id + '/' + action;
+        var url = host + '/rest/' + api + id + '/' + action;
         url = Utils.addQueryParamtersToUrl(args.query, url);
         return url;
     },
